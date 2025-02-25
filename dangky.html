@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng ký</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <header style="background-color: #333; padding: 15px; display: flex; align-items: center; justify-content: space-between;">
+        <div class="logo">
+            <img src="cinema.png" alt="Logo" style="height: 50px;">
+        </div>
+        <div class="actions" style="display: flex; align-items: center; gap: 15px;">
+            <input id="search" class="search-input" type="text" placeholder="Tìm phim..." name="search">
+            <button style="background-color: rgb(255, 255, 255); border: none; padding: 10px 20px; font-weight: bold; cursor: pointer; display: flex; align-items: center; gap: 5px;">
+                <a href="phim.html" style="text-decoration: none; color: rgb(0, 0, 0); font-weight: bold;">Trang chủ</a> 
+            </button>
+            <div class="login" style="display: flex; align-items: center; gap: 10px; background-color: #444; padding: 10px; border-radius: 5px;">
+                <i class="fas fa-user-circle" style="color: white;"></i>
+             <a href="Đangnhap.html" style="text-decoration: none; color: white; font-weight: bold;">Đăng nhập</a>  
+                <a href="dangky.html" style="text-decoration: none; color: white; font-weight: bold;">Đăng ký </a>
+            </div>
+        </div>
+    </header>
+
+<body>
+    <header><div class="sign section--bg" data-bg="/Content/img/section/section.jpg" style="background: url(/Content/img/bg.jpg) center center / cover no-repeat;">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="sign__content">
+                 
+                    <div class="sign__form">
+                        <h2>Đăng Ký</h2>
+                        <div class="row">
+                            <div class="col-lg-6" style="float:center">
+                                <div class="sign__group">
+                                    <input type="text" class="sign__input" id="rgFullName" placeholder="Họ &amp; t&#234;n(*)">
+                                </div>
+                                <div class="sign__group">
+                                    <input type="text" class="sign__input" id="rgAddress" placeholder="Địa chỉ(*)">
+                                </div>
+                                <div class="sign__group">
+                                    <input type="number" class="sign__input" id="rgCMND" placeholder="CMND(*)">
+                                </div>
+                                <div class="sign__group">
+                                    <input type="email" class="sign__input" id="rgEmail" placeholder="Email(*)">
+                                </div>
+                                <div class="sign__group">
+                                    <input type="tel" class="sign__input" id="rgPhone" placeholder="Điện thoại(*)">
+                                </div>
+                            </div>
+                            <div class="col-lg-6" style="float:center">
+                                <div class="sign__group">
+                                    <input type="date" class="sign__input" id="rgBirthDay" placeholder="Ng&#224;y sinh">
+                                </div>
+                                <div class="sign__group">
+                                    <label style="height:50px" class="radio-inline">
+                                        <input type="radio" id="rgGenderTrue" style=" width: 25px;height: 25px;" name="optradio" checked>Nam
+                                    </label>
+                                    <label class="radio-inline">
+                                        <input type="radio" id="rgGenderFalse" style=" width: 25px;height: 25px;" name="optradio">Nữ
+                                    </label>
+                                </div>
+
+                                <div class="sign__group">
+                                    <input type="text" class="sign__input" id="rgUserName" placeholder="Email / T&#234;n đăng nhập">
+                                </div>
+                                <div class="sign__group">
+                                    <input type="password" class="sign__input" id="rgPassword" placeholder="Mật khẩu(*)">
+                                </div>
+                                <div class="sign__group">
+                                    <input type="password" class="sign__input" id="rgPasswordConfirm" placeholder="Mật khẩu nhập lại(*)">
+                                </div>
+                            </div>
+                        </div>
+                        <button class="sign__btn" type="button" onclick="register()">Đăng k&#253;</button><BR>
+                        <span class="sign__text">Đã có tài khoản vui lòng? <a href="/dang-nhap.html">Đăng nhập!</a></span>
+                        <span class="sign__text"><a href="/quen-mat-khau.html">Qu&#234;n mật khẩu?</a></span><BR>
+                        <span class="sign__text">Để tiếp tục việc đăng k&#253; t&#224;i khoản tại CINESTAR. Vui l&#242;ng điền đầy đủ th&#244;ng tin c&#243; đ&#225;nh <strong>(*)</strong>. </span>
+
+                    </div>
+                    <!-- end authorization form -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    </header>
+</body>
+</html>

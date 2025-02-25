@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phim</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #0c0c1d;
+            margin: 0;
+        }
+        .login-container {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            width: 400px;
+            padding: 20px;
+            text-align: center;
+            margin: 100px auto;
+        }
+        .login-box label {
+            display: block;
+            text-align: left;
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: black;
+        }
+        .login-box input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .checkbox-container {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            color: black;
+        }
+        .checkbox-container label {
+            margin-left: 5px;
+            font-size: 14px;
+        }
+        .forgot-password {
+            display: block;
+            text-align: right;
+            margin: 10px 0;
+            text-decoration: none;
+            color: black;
+        }
+        .btn-submit {
+            background-color: #ffcc00;
+            color: black;
+            font-weight: bold;
+            border: none;
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+    <header style="background-color: #333; padding: 15px; display: flex; align-items: center; justify-content: space-between;">
+        <div class="logo">
+            <img src="cinema.png" alt="Logo" style="height: 50px;">
+        </div>
+        <div class="actions" style="display: flex; align-items: center; gap: 15px;">
+            <input id="search" class="search-input" type="text" placeholder="Tìm phim..." name="search">
+            <button style="background-color: rgb(255, 255, 255); border: none; padding: 10px 20px; font-weight: bold; cursor: pointer; display: flex; align-items: center; gap: 5px;">
+                <a href="phim.html" style="text-decoration: none; color: rgb(0, 0, 0); font-weight: bold;">Trang chủ</a> 
+            </button>
+            <div class="login" style="display: flex; align-items: center; gap: 10px; background-color: #444; padding: 10px; border-radius: 5px;">
+                <i class="fas fa-user-circle" style="color: white;"></i>
+             <a href="Đangnhap.html" style="text-decoration: none; color: white; font-weight: bold;">Đăng nhập</a>  
+                <a href="dangky.html" style="text-decoration: none; color: white; font-weight: bold;">Đăng ký </a>
+            </div>
+        </div>
+    </header>
+    <div class="login-container">
+        <h2>
+        <a href="#" style="text-decoration: none; color: rgb(0, 0, 0); font-weight: bold;">ĐĂNG NHẬP</a></h2>
+        <div class="login-box">
+            <form action="#" method="POST">
+                <label for="username">Tài khoản, Email hoặc số điện thoại <span>*</span></label>
+                <input type="text" id="username" name="username" required>
+                
+                <label for="password">Mật khẩu <span>*</span></label>
+                <input type="password" id="password" name="password" required>
+                
+                <div class="checkbox-container">
+                    <label for="remember-password">Lưu mật khẩu đăng nhập</label>
+                    <input type="checkbox" id="remember-password" name="remember-password">
+
+                </div>
+                
+                <a href="#" class="forgot-password">Quên mật khẩu?</a>
+                
+                <button type="submit" class="btn-submit">ĐĂNG NHẬP</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
